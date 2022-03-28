@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;  /*1rem = 10 px*/
+}
+
+body{
+	background-image: url(../img/fondo.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+h1,h2,h3,h4{
+	color: ghostwhite;
+	font-size: 3.5rem;
+}
+
+p{
+	color: black;
+	font-size: 1.8rem;
+	font-weight: 300;  
+	line-height: 2.4rem;
+}
+
+.encabezado nav{
+	background-color: rgba(255, 150, 0, 0.3);
+	position: static;
+	top: 0;
+	padding: 20px 0px;
+	width: 100%;
+}
+
+	.encabezado nav a{
+		text-decoration: none;
+	}
+
+	.encabezado nav ol{
+		display: inline-block; 
+		margin-left: 700px;
+	}
+
+		.encabezado nav ol li{
+			list-style: none;
+			display: inline-block;
+			margin-right: 20px;
+			margin-top: -80px;
+			height: 30px;
+			vertical-align: middle;
+		}
+
+			.encabezado nav ol li a{
+				text-decoration: none;
+				color: ghostwhite;
+				font-family: 'Roboto', sans-serif;
+				font-size: 1.8rem;
+			}
+
+			.encabezado nav ol li a:hover{
+					font-weight: 800;
+					color: black;
+			}		
+
+.textOrange{
+	color: #F69100;
+} 
+
+.textWhite{
+	color: ghostwhite;
+} 
+
+.textCenter{
+	text-align: center;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textBold{
+	font-weight: 600;		
+}
+
+.bgLight{
+	background-color: rgba(246, 145, 0, 0.3);
+}
+
+.bgDark{
+	background-color: rgba(210, 115, 0, 0.3);	
+}
+
+.encabezado__box--ghostwhite{
+	text-align: center;
+	background-color: ghostwhite;
+	padding: 20px 0px;
+}
+
+.encabezado__img--fluid{
+	width: 100%;
+}
+
+.novedades__titulo--xxl{
+	font-size: 4rem;
+}
+
+.novedades__titulo--xl{
+	font-size: 3rem;
+}
+
+.novedades__titulo--md{
+	font-size: 2rem;
+}
+
+.novedades__articulo{
+	width: 90%;
+	height: auto;
+	margin: 20px auto;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	border: solid 5px #D27300;
+}	
+
+.ubicacion__articulo{
+	width: 90%;
+	height: auto;
+	margin: 20px auto;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	border: dotted 5px #D27300;	
+}
+
+.fotos__articulo{
+	width: 30%;
+	height: auto;
+	margin: 20px auto;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	border: dotted 5px #D27300;	
+}
+
+#productos .galeria{
+	margin: 20px 0;
+}
+
+	#productos .galeria figure{
+		margin: 10px 0;
+	}
+
+		#productos .galeria figure img{
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			width: 100%;
+		}
+
+		#productos .galeria figure figcaption{
+			font-size: 2.5rem;
+			color: #D27300;
+			padding: 10px 0;
+			background-color: ghostwhite;
+			text-align: center;
+		}
+
+		#productos .galeria p.price{
+			color: #E48200;
+			padding-bottom: 10px;
+			background-color: ghostwhite;
+			text-align: center;
+		}
+
+.price{
+	font-size: 3rem;
+	font-weight: 600;
+	color: black;
+}
+
+.foto__producto{
+	background-color: #AF5700;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tabla{
+	width: 90%;
+	height: auto;
+	margin: 20px auto;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	border: solid 5px #D27300;
+	background-color: rgba(255, 198, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+}
+
+.foto__aside{
+	width: 30%;
+	height: auto;
+	margin: 20px auto;
+}
+
+.secondNav{
+	background-color: #D27300;
+	color: ghostwhite;
+	padding: 10px;
+	font-size: 1.3rem;
+	line-height: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.secondNav form{
+		margin-bottom: 20px;
+	}
+
+	.secondNav img{
+		margin-bottom: 30px;
+	}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 20% 70% 10%;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header header header"
+	"nav nav nav"
+	"filtros productos aside"
+	"footer footer footer"
+}
+
+#mainNav{
+	grid-area: nav;
+}
+
+#header{
+	grid-area: header;
+}
+
+#filtros{
+	grid-area: filtros;
+}
+
+#productos{
+	grid-area: productos;
+}
+
+#aside{
+	grid-area: aside;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+/*bloque__elemento--modificador*/
+
+/*media-queries*/
+/*
+@media only screen and (max-width: 834px) and (min-width: 415px){
+	body{
+	
+	}
+}
+*/
+
+@media only screen and (max-width: 414px){
+
+	.contenedor{
+		justify-content: center;
+		justify-items: center;
+		align-items: center;
+		display: grid;
+		grid-template-columns: 20vw 80vw;
+		grid-template-rows: repeat(5, auto);
+		grid-template-areas: "header header"
+		"nav nav"
+		"filtros productos"
+		"aside aside"
+		"footer footer";
+	}
+
+	#productos .galeria{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#productos .galeria figure{
+		width: 90%;
+	}
+
+		#productos .galeria figure img{
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			width: 100%;
+		}
+
+		#productos .galeria figure figcaption{
+			font-size: 2.5rem;
+			color: darkgreen;
+			padding: 10px 0;
+			background-color: whitesmoke;
+			text-align: center;
+		}
+
+		#productos .galeria p.price{
+			color: darkslategrey;
+			padding-bottom: 10px;
+			background-color: whitesmoke;
+			text-align: center;
+		}
+
+	#aside{
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+}
+
+.pie-pagina{
+	width: 100%;
+	background-color: #D27300;
+	text-align: center;
+	align-items: center;
+}
+
+.pie-pagina .grupo-1{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 50px;
+	padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+	width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h5{
+	color: #FFF;
+	margin-bottom: 25px;
+	font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+	color: #FFF;
+	margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+	display: inline-block;
+	text-decoration: none;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	color: #FFF;
+	margin-right: 10px;
+	background-color: #AF5700;
+	text-align: center;
+	transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a: hover{
+	color: lightyellow;
+}
+
+.pie-pagina .grupo-2{
+	background-color: #D27300;
+	padding: 15px 10px;
+	text-align: center;
+	color: #FFF;
+}
+
+.pie-pagina .grupo-2 small{
+	font-size: 15px;
+}
+
+.pie__icon--sm{
+	width: 30px;
+}
+
+/*@media only screen and (min-width: 576px){
+	.pie-pagina .grupo-1{
+		width: 90%;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 30px;
+		padding: 35px 0px;
+	}
+}
+
+@media only screen and (min-width: 780px){
+
+}
+
+@media only screen and (min-width: 950px){
+
+}*/

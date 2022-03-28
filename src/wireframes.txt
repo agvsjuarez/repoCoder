@@ -1,0 +1,19 @@
+wireframe desktop:
+
+index: https://wireframe.cc/UKCUfk
+empresa: https://wireframe.cc/55d4UL
+productos: https://wireframe.cc/ozNWmE
+calidad: https://wireframe.cc/VPLFsK
+contacto: https://wireframe.cc/NpriSV
+
+-------------------------------
+
+wireframe mobile:
+
+index: https://wireframe.cc/lgmSch
+empresa: https://wireframe.cc/aUr8f8
+productos: https://wireframe.cc/7R8Is6
+calidad: https://wireframe.cc/uQWDdm
+contacto: https://wireframe.cc/yDGHqC
+
+
