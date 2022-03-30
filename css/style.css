@@ -407,3 +407,16 @@ p{
 @media only screen and (min-width: 950px){
 
 }*/
+
+/*.btn-lav{
+	color: #FFF;
+	background-color: #D27300;
+	border-color: #D27300;
+}
+
+.btn-lav: hover{
+	color: #FFF;
+	background-color: #D27300;
+	border-color: #D27300;
+	transform: scale(0.9);
+}*/
