@@ -1,0 +1,112 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*fondos colores*/
+
+.bg-dark{
+	background-color: #262525
+}
+
+.bg-danger{
+	background-color: #C11111
+}
+
+.bg-info{
+	background-color: #0065c3
+}
+
+.bg-success{
+	background-color: #12E73F
+}
+
+.bg-warning{
+	background-color: #E76424
+}
+
+/*end fondos */
+
+
+section{
+	display: flex;
+	padding: 10px;
+	justify-content: space-between;
+}
+
+
+div{
+	color: black;
+	font-size: 2em;
+	border:solid 1px white;
+	border-radius: 5px;
+	margin: 30px;
+	height: 30vh;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+}
+
+
+/* clases para los temas de hoy*/
+
+.linear-gradient{
+	
+}
+
+.transform:hover{
+	
+}
+
+.rotate:hover{
+	
+}
+
+.scale:hover{
+	
+}
+
+.skew:hover{
+	
+}
+
+@keyframes animateDiv{
+	
+}
+
+.animate{
+	
+}
+
+
+.transition{
+	
+}
+
+.transition:hover{
+	
+}
+
+@keyframes textAlpha{
+	
+}
+
+
+h3{
+	
+}
+
+button{
+	
+}
+
+button:hover{
+	
+
+}
+
+

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather&display=swap");
+#menu {
+  background-color: #FF7A13; }
+  #menu nav {
+    background-color: #FF7A13;
+    position: static;
+    top: 0;
+    padding: 20px 0px;
+    width: 100%; }
+    #menu nav a {
+      text-decoration: none; }
+      #menu nav a img {
+        width: 30%; }
+    #menu nav ol {
+      display: inline-block;
+      margin-left: 700px; }
+      #menu nav ol li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 20px;
+        margin-top: -80px;
+        height: 30px;
+        vertical-align: middle; }
+        #menu nav ol li a {
+          text-decoration: none;
+          color: ghostwhite;
+          font-family: "Libre Baskerville", serif;
+          font-size: 2rem; }
+        #menu nav ol li a:hover {
+          font-weight: 800;
+          color: black; }
+
+#home {
+  font-weight: 600; }
+
+#empresa {
+  text-align: center;
+  padding: 20px 50px; }
+  #empresa section {
+    background-color: rgba(255, 122, 19, 0.8);
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border: solid 5px #E66200; }
+  #empresa h1, #empresa h2 {
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    margin: 10px 0;
+    font-family: "Libre Baskerville", serif; }
+  #empresa p {
+    text-align: center;
+    color: ghostwhite;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: "Merriweather", serif; }
+    #empresa p span {
+      font-weight: 600;
+      color: #FF7A13; }
+
+#fondo {
+  background-image: url(../img/fondo2.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed; }
+
+#piepag {
+  width: 100%;
+  background-color: #FF7A13;
+  text-align: center;
+  align-items: center; }
+
+#grupo1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px; }
+  #grupo1 div figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #grupo1 div figure img {
+      width: 250px; }
+  #grupo1 div h4 {
+    color: ghostwhite;
+    font-size: 2rem; }
+  #grupo1 div p {
+    color: ghostwhite;
+    margin-bottom: 10px; }
+    #grupo1 div p span {
+      font-weight: 600;
+      color: ghostwhite; }
+  #grupo1 div h5 {
+    color: ghostwhite;
+    margin-bottom: 25px;
+    font-size: 20px; }
+  #grupo1 div div a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: ghostwhite;
+    margin-right: 10px;
+    background-color: rgba(230, 98, 0, 0.8);
+    text-align: center;
+    transition: all 300ms ease; }
+  #grupo1 div div img {
+    width: 30px; }
+
+#grupo2 {
+  background-color: rgba(230, 98, 0, 0.8);
+  padding: 15px 10px;
+  text-align: center;
+  color: ghostwhite; }
+  #grupo2 small {
+    font-size: 15px; }

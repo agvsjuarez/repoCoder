@@ -1,0 +1,37 @@
+#empresa{
+	text-align: center;
+	padding: 20px 50px;
+	section{
+		background-color: $mainColor;
+		width: 90%;
+		height: auto;
+		margin: 20px auto;
+		padding: 20px 30px;
+		box-sizing: border-box;
+		border: solid 5px $keyColor4;
+	}
+	h1,h2{
+		text-align: center;
+		color:$keyColor2;
+		font-size: $textLg;
+		margin: 10px 0;
+		font-family: $fontMain;
+	}
+	p{
+		text-align: center;
+		color: $keyColor;
+		font-size: $textMd;
+		line-height: $textMd;
+		font-family: $fontSecondary;
+		span{
+			font-weight: 600;
+			color: $keyColor3;			
+		}
+	}	
+}
+
+#fondo{
+	background-image: url(../img/fondo2.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}

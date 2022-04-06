@@ -1,0 +1,79 @@
+#piepag{
+	width: 100%;
+	background-color: $keyColor3;
+	text-align: center;
+	align-items: center;	
+}
+
+#grupo1{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 50px;
+	padding: 45px 0px;
+	div{
+		figure{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img{
+				width: 250px;				
+			}			
+		}
+	}
+	div{
+		h4{
+			color: $keyColor;
+			font-size: $textMd;
+		}
+		p{
+			color: $keyColor;
+			margin-bottom: 10px;
+			span{
+				font-weight: 600;
+				color: $keyColor;					
+			}
+		}
+	}
+	div{
+		h5{
+			color: $keyColor;
+			margin-bottom: 25px;
+			font-size: 20px;
+		}
+		div{
+			a{
+				display: inline-block;
+				text-decoration: none;
+				width: 45px;
+				height: 45px;
+				line-height: 45px;
+				color: $keyColor;
+				margin-right: 10px;
+				background-color: $secondColor;
+				text-align: center;
+				transition: all 300ms ease;	
+			}
+			img{
+				width: 30px;	
+			}
+		}
+	}
+}
+
+#grupo2{
+	background-color: $secondColor;
+	padding: 15px 10px;
+	text-align: center;
+	color: $keyColor;
+	small{
+		font-size: 15px;	
+	}
+}
+
+
+

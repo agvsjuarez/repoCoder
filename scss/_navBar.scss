@@ -1,0 +1,43 @@
+#menu{
+	background-color: $keyColor3;
+	nav{
+		background-color: $keyColor3;
+		position: static;
+		top: 0;
+		padding: 20px 0px;
+		width: 100%;
+		a{
+			text-decoration: none;
+			img{
+				width: 30%;	
+			}
+		}
+		ol{
+			display: inline-block; 
+			margin-left: 700px;
+			li{
+				list-style: none;
+				display: inline-block;
+				margin-right: 20px;
+				margin-top: -80px;
+				height: 30px;
+				vertical-align: middle;	
+				a{
+					text-decoration: none;
+					color: ghostwhite;
+					font-family: $fontMain;
+					font-size: $textMd;		
+				}
+				a:hover{
+					font-weight: 800;
+					color: $keyColor2;
+				}			
+			}		
+		}		
+
+	}
+}
+
+#home{
+	font-weight: 600;
+}
