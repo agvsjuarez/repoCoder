@@ -1,3 +1,14 @@
+@mixin texto($font-size,$color){
+	font-size: $font-size;
+	color: $color;
+}
+
+$paleta:(
+	'uno': #FF7A13,
+	'dos': #E66200,
+	'tres': #D27300,
+);
+
 #empresa{
 	text-align: center;
 	padding: 20px 50px;
@@ -11,9 +22,8 @@
 		border: solid 5px $keyColor4;
 	}
 	h1,h2{
+		@include texto($textLg, $keyColor2);
 		text-align: center;
-		color:$keyColor2;
-		font-size: $textLg;
 		margin: 10px 0;
 		font-family: $fontMain;
 	}
@@ -63,7 +73,7 @@
 		font-family: $fontSecondary;
 		span{
 			font-weight: 600;
-			color: $keyColor3;			
+			color: map-get($map:$paleta,$key: 'uno');;			
 		}
 	}	
 }
@@ -164,3 +174,23 @@
 		}
 	}		
 }
+
+.btn-more{
+	width: 100px;
+	height: auto;
+	background-color: $mainColor;
+	border: none;
+	&:hover{
+		color: $mainColor;
+		cursor: pointer;
+	}
+}
+
+.btn-rounded{
+	@extend .btn-more;
+	border-radius: 15px;
+}
+
+
+
+
