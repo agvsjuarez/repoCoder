@@ -13,6 +13,8 @@
 	<script>
 		new WOW().init();
 	</script>
+	<script src="../js/jquery-3.6.0.js"></script>
+	<script src="../js/script.js"></script>
 
 </head>
 <body id="fondo">
@@ -47,7 +49,7 @@
 	</header>
 
 	<main id="productos"> 
-		<section>
+<!-- 		<section>
 			<h1>¡Te ofrecemos algunos de nuestros productos!</h1>
 			<table border="3px" cellpadding="5px" cellspacing="5px">
 				<tr class="novedades__titulo--md">
@@ -86,7 +88,131 @@
 					<td>$1300</td>
 				</tr>
 			</table>
-		</section> 
+		</section>  -->
+
+		<div class="wrap wow fadeInUp">
+			<h1>Escoge un producto</h1>
+			<div class="store-wrapper">
+				<div class="category_list">
+					<a href="#" class="category_item" category="all">Todo</a>
+					<a href="#" class="category_item" category="conductores">Conductores</a>
+					<a href="#" class="category_item" category="envainado">Envainado redondo</a>
+					<a href="#" class="category_item" category="linea">Linea paralelo flexible chato</a>
+					<a href="#" class="category_item" category="preensamblado">Preensamblado de acometida de cobre</a>
+					<a href="#" class="category_item" category="clips">Clips de batería</a>
+					<a href="#" class="category_item" category="interruptores">Interruptores de corriente</a>
+					<a href="#" class="category_item" category="cable">Cable armado</a>
+					<a href="#" class="category_item" category="lamparas">Lámparas portátiles</a>
+					<a href="#" class="category_item" category="puentes">Puentes de batería</a>
+					<a href="#" class="category_item" category="terminalesbat">Terminales de batería</a>
+					<a href="#" class="category_item" category="terminalesins">Terminales de instalación</a>
+					<a href="#" class="category_item" category="tuerca">Tuerca mariposa</a>
+				</div>
+
+				<section class="products-list">
+					<div class="product-item" category="conductores">
+						<img src="../img/conductores1.jpeg" alt="Cable conductor">
+						<a href="#">Conductor concéntrico anti-hurto</a>
+					</div>
+					<div class="product-item" category="conductores">
+						<img src="../img/conductores2.jpeg" alt="Cable conductor">
+						<a href="#">Conductor eléctrico flexible vaina chata</a>
+					</div>
+					<div class="product-item" category="conductores">
+						<img src="../img/conductores3.jpeg" alt="Cable conductor">
+						<a href="#">Cable unipolar</a>
+					</div>
+					<div class="product-item" category="conductores">
+						<img src="../img/conductores4.jpeg" alt="Cable conductor">
+						<a href="#">Conductor para parlante bicolor</a>
+					</div>
+					<div class="product-item" category="conductores">
+						<img src="../img/conductores5.jpeg" alt="Cable conductor">
+						<a href="#">Conductor para soldar extraflexible</a>
+					</div>
+					<div class="product-item" category="conductores">
+						<img src="../img/conductores6.jpeg" alt="Cable conductor">
+						<a href="#">Conductor subterráneo</a>
+					</div>
+					<div class="product-item" category="conductores">
+						<img src="../img/conductores7.jpeg" alt="Cable conductor">
+						<a href="#">Conductor para batería flexible</a>
+					</div>
+					<div class="product-item" category="envainado">
+						<img src="../img/envainado.jpeg" alt="Envainado redondo">
+						<a href="#">Envainado redondo</a>
+					</div>
+					<div class="product-item" category="linea">
+						<img src="../img/linea.jpeg" alt="Linea paralelo flexible">
+						<a href="#">Linea paralelo flexible chato</a>
+					</div>
+					<div class="product-item" category="preensamblado">
+						<img src="../img/preensamblado.jpeg" alt="Preensamblado acometida de cobre">
+						<a href="#">Preensamblado de acometida de cobre</a>
+					</div>
+					<div class="product-item" category="clips">
+						<img src="../img/clips.jpg" alt="Clip de bateria">
+						<a href="#">Clip de batería</a>
+					</div>
+					<div class="product-item" category="clips">
+						<img src="../img/clips2.jpeg" alt="Clip de bateria">
+						<a href="#">Clip de batería aislado</a>
+					</div>
+					<div class="product-item" category="interruptores">
+						<img src="../img/interruptores1.jpeg" alt="Interruptor de corriente">
+						<a href="#">Interruptor de corriente A</a>
+					</div>
+					<div class="product-item" category="interruptores">
+						<img src="../img/interruptores2.jpeg" alt="Interruptor de corriente">
+						<a href="#">Interruptor de corriente B</a>
+					</div>
+					<div class="product-item" category="interruptores">
+						<img src="../img/interruptores3.jpeg" alt="Interruptor de corriente">
+						<a href="#">Interruptor de corriente C</a>
+					</div>
+					<div class="product-item" category="interruptores">
+						<img src="../img/interruptores4.jpeg" alt="Interruptor de corriente">
+						<a href="#">Interruptor de corriente D</a>
+					</div>
+					<div class="product-item" category="cable">
+						<img src="../img/cable.jpeg" alt="Cable armado">
+						<a href="#">Cable armado</a>
+					</div>
+					<div class="product-item" category="lamparas">
+						<img src="../img/lampara.jpeg" alt="Lampara portatil">
+						<a href="#">Lámpara portátil</a>
+					</div>
+					<div class="product-item" category="puentes">
+						<img src="../img/puentes1.jpeg" alt="Puente de bateria">
+						<a href="#">Puente de batería A</a>
+					</div>
+					<div class="product-item" category="puentes">
+						<img src="../img/puentes2.jpeg" alt="Puente de bateria">
+						<a href="#">Puente de batería B</a>
+					</div>
+					<div class="product-item" category="terminalesbat">
+						<img src="../img/terminales1.jpg" alt="Terminal de bateria">
+						<a href="#">Terminal de batería A</a>
+					</div>
+					<div class="product-item" category="terminalesbat">
+						<img src="../img/terminales2.jpg" alt="Terminal de bateria">
+						<a href="#">Terminal de batería B</a>
+					</div>
+					<div class="product-item" category="terminalesbat">
+						<img src="../img/terminales3.jpg" alt="Terminal de bateria">
+						<a href="#">Terminal de batería C</a>
+					</div>
+					<div class="product-item" category="terminalesins">
+						<img src="../img/terminalesins.jpeg" alt="Terminal de instalacion">
+						<a href="#">Terminal de instalación</a>
+					</div>
+					<div class="product-item" category="tuerca">
+						<img src="../img/tuerca.jpeg" alt="Tuerca mariposa">
+						<a href="#">Tuerca mariposa</a>
+					</div>
+				</section>
+			</div>
+		</div>
 	</main>	
 
  	<footer id="piepag">

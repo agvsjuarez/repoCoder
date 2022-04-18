@@ -57,6 +57,17 @@ $paleta:(
 		padding: 20px 30px;
 		box-sizing: border-box;
 		border: solid 5px $keyColor4;
+		.normas{
+			background-color: $keyColor;
+			display: flex;
+			justify-content: space-between;
+			img{
+				width: 80%;
+				height: auto;
+				margin: 20px auto;
+				padding: 20px 20px;
+			}
+		}
 	}
 	h1,h2{
 		text-align: center;
@@ -115,33 +126,33 @@ $paleta:(
 	align-items: center;	
 }
 
-#productos{
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	h1{
-		text-align: center;
-		font-size: $textXl;	
-		font-family: $fontMain;
-		color: $keyColor2;	
-	}
-	section{
-		width: 90%;
-		height: auto;
-		margin: 20px auto;
-		padding: 20px 30px;
-		box-sizing: border-box;
-		border: solid 5px $secondColor;
-		background-color: $mainColor;
-		display: flex;
-		flex-direction: column;	
-		color: $keyColor;
-		tr{
-			font-family: $fontSecondary;
-		}
-	}			
-}
+// #productos{
+// 	text-align: center;
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	h1{
+// 		text-align: center;
+// 		font-size: $textXl;	
+// 		font-family: $fontMain;
+// 		color: $keyColor2;	
+// 	}
+// 	section{
+// 		width: 90%;
+// 		height: auto;
+// 		margin: 20px auto;
+// 		padding: 20px 30px;
+// 		box-sizing: border-box;
+// 		border: solid 5px $secondColor;
+// 		background-color: $mainColor;
+// 		display: flex;
+// 		flex-direction: column;	
+// 		color: $keyColor;
+// 		tr{
+// 			font-family: $fontSecondary;
+// 		}
+// 	}			
+// }
 
 #index{
 	text-align: center;
@@ -153,7 +164,18 @@ $paleta:(
 		margin: 20px auto;
 		padding: 20px 30px;
 		box-sizing: border-box;
-		border: solid 5px $keyColor4;	
+		border: solid 5px $keyColor4;
+		.proximos{
+			background-color: $keyColor;
+			display: flex;
+			justify-content: space-between;
+			img{
+				width: 80%;
+				height: auto;
+				margin: 20px auto;
+				padding: 20px 20px;
+			}
+		}	
 	}
 	h1,h2,h3{
 		text-align: center;
@@ -191,6 +213,223 @@ $paleta:(
 	border-radius: 15px;
 }
 
+#productos{
+	text-align: center;
+	padding: 20px 50px;	
+	.wrap{
+		max-width: 1100px;
+		width: 90%;
+		margin: auto;
+		font-family: $fontSecondary;	
+	}
+	h1{
+		font-family: $fontMain;	
+		color: $keyColor2;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 15px 0px;
+	}
+	.store-wrapper{
+		display: flex;
+	}
+	.category_list{
+		display: flex;
+		flex-direction: column;
+		width: 18%;
+		.category_item{
+			display: block;
+			width: 90%;
+			padding: 15px 0px;
+			margin-bottom: 20px;
+			background: $keyColor3;
+			text-align: center;
+			text-decoration: none;
+			color: $keyColor;
+			border-radius: 15px;
+		}
+		.ct_item-active{
+			background: $keyColor2;
+		}
+	}	
+	.products-list{
+		width: 82%;
+		display: flex;
+		flex-wrap: wrap;
+		.product-item{
+			width: 22%;
+			margin-left: 3%;
+			background-color: $keyColor4;
+			margin-bottom: 25px;
 
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			align-self: flex-start;
 
+			transition: all .4s;
+			img{
+				width: 100%;
+			}
+			a{
+				display: block;
+				width: 100%;
+				padding: 8px 0px;
+				color: $keyColor;
+			}
+		}
+	}
+}
 
+@media only screen and (max-width: 513px){
+	
+	#index{
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-self: flex-start;
+		padding: 35px 0px;
+		text-align: center;
+		article{
+			margin: 16px 20px 25px 18px;
+			width: 100%;
+			.proximos{
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				img{
+					width: 80%;
+				}
+			}
+		}
+		h1,h2,h3{
+			text-align: center;
+			font-size: $textMd;
+		}
+		p{
+			text-align: center;
+			font-size: $textSm;
+			span{
+				font-weight: 400;			
+			}
+		}
+		iframe{
+			width: 100%;
+		}
+	}
+
+	#empresa{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-self: flex-start;
+		padding: 35px 0px;
+		text-align: center;
+		section{
+			margin: 16px 20px 25px 18px;
+			width: 90%;
+			height: auto;
+		}
+		h1,h2{
+			@include texto($textMd, $keyColor2);
+			text-align: center;
+		}
+		p{
+			text-align: center;
+			font-size: $textSm;
+			span{
+				font-weight: 400;		
+			}
+		}
+		img{
+			width: 80%;
+		}	
+	}
+
+	#productos{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-self: flex-start;
+		h1{
+			font-size: $textMd;
+			text-align: center;
+		}
+		.products-list{
+			margin: 16px 20px 25px 18px;
+			.product-item{
+				width: 100%;
+			}
+		}
+		.store-wrapper{
+			flex-direction: column;
+		}
+		.category_list{
+			width: 100%;
+			margin: 16px 20px 25px 18px;
+			.category_item{
+				width: 90%;
+			}
+		}
+	}
+
+	#calidad{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-self: flex-start;
+		padding: 35px 0px;
+		text-align: center;
+		section{
+			margin: 16px 20px 25px 18px;
+			width: 90%;
+			.normas{
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				img{
+					width: 80%;
+				}
+			}
+		}
+		h1,h2{
+			text-align: center;
+			font-size: $textMd;
+		}
+		p{
+			text-align: center;
+			font-size: $textSm;
+			span{
+				font-weight: 400;		
+			}
+		}	
+	}
+
+	#contacto{
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-self: flex-start;
+		padding: 35px 0px;
+		text-align: center;
+		margin: 16px 20px 25px 18px;
+		h1{
+			text-align: center;
+			font-size: $textMd;	
+		}
+		fieldset{
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: $textSm;
+		}
+		button{
+			width: 90%;
+		}
+	}
+}
