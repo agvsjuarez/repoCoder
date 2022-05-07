@@ -374,7 +374,7 @@
     align-items: center; }
     #grupo1 div figure img {
       width: 250px; }
-  #grupo1 div h4 {
+  #grupo1 div .sobrenosotros {
     color: ghostwhite;
     font-size: 2rem; }
   #grupo1 div p {
@@ -383,7 +383,7 @@
     #grupo1 div p span {
       font-weight: 600;
       color: ghostwhite; }
-  #grupo1 div h5 {
+  #grupo1 div .seguinos {
     color: ghostwhite;
     margin-bottom: 25px;
     font-size: 20px; }
