@@ -63,7 +63,7 @@ console.log("Los empleados que ingresaron fueron: " + arrayNombres.join(';'))
 //Luego se imprimen estos datos por pantalla y se realiza un listado de ellos con todos sus datos por separado.
 //Tambien se le asigna un numero de cliente a cada quien que ingrese, comenzando del 0 en adelante.
 
-
+/*
 function Persona(nombre, edad, tel, direc){
 
 	this.nombre = nombre;
@@ -126,3 +126,31 @@ for(let index=0; index < telefonos.length; index++){
 for(let index=0; index < direcciones.length; index++){
 	console.log("Direccion del cliente " + index + " : " + direcciones[index]);
 }
+*/
+
+
+
+
+
+//DESAFIO: INCORPORANDO EVENTOS
+//Para este desafio se solicita la cantidad de cable que desee el cliente segun cuantas veces presione el boton + o - para modificar esta cantidad
+document.title = "BAUD-MOL S.A.";
+
+const contador = document.querySelector("#contador");
+const btnMas = document.querySelector("#aumentar");
+const btnMenos = document.querySelector("#disminuir");
+
+let cont = 0;
+
+function cantidadCable(num){
+	cont = cont + num;
+	contador.innertHTML = cont;	
+}
+
+btnMas.addEventListener("click", () => {
+	cantidadCable(1);
+});
+
+btnMenos.addEventListener("click", () => {
+	cantidadCable(-1);
+});
